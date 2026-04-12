@@ -1,0 +1,55 @@
+# ========== UNITY ==========
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# ========== VISUAL STUDIO / VS CODE ==========
+.vs/
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ========== OS ==========
+.DS_Store
+Thumbs.db
+
+# ========== UNITY GENERATED ==========
+*.apk
+*.aab
+*.unitypackage
+
+# ========== CACHE ==========
+/Cache/
+/obj/
+
+# ========== LOG FILES ==========
+*.log
+
+# ========== IL2CPP ==========
+/il2cpp_cache/
+
+# ========== ADDRESSABLES ==========
+/Assets/AddressableAssetsData/*/*.bin*
+
+# ========== DOTS ==========
+/Assets/DOTS*
+
+# ========== CRASH REPORTS ==========
+crashlytics-build.properties
+
+# ========== OTHER ==========
+*.tmp
+*.bak
+*.swp
