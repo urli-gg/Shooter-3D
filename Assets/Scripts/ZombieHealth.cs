@@ -23,6 +23,13 @@ public class ZombieHealth : MonoBehaviour
 
     void Die()
     {
+        PointsSystem points = FindFirstObjectByType<PointsSystem>();
+
+        if (points != null)
+        {
+            points.AddPoints(100); 
+        }
+
         if (waveManager != null)
         {
             waveManager.ZombieKilled();
@@ -31,3 +38,4 @@ public class ZombieHealth : MonoBehaviour
         Destroy(gameObject);
     }
 }
+

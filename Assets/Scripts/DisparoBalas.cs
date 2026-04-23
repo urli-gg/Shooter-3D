@@ -1,10 +1,12 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DisparoBalas : MonoBehaviour
 {
     public Transform firePoint;
     public float range = 100f;
     public int damage = 25;
+
+    public Hitmarker hitmarker; // 👈 referencia al hitmarker
 
     void Update()
     {
@@ -27,6 +29,12 @@ public class DisparoBalas : MonoBehaviour
             if (zombie != null)
             {
                 zombie.TakeDamage(damage);
+
+                // 🔥 activar hitmarker
+                if (hitmarker != null)
+                {
+                    hitmarker.ShowHitmarker();
+                }
             }
         }
     }
