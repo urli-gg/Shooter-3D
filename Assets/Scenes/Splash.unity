@@ -459,8 +459,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Urleano Zombies
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a20ea4c4c7c9d543833e176e3c72c23, type: 2}
+  m_sharedMaterial: {fileID: -2785375429109273208, guid: 8a20ea4c4c7c9d543833e176e3c72c23, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -616,8 +616,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cdfc8c9f202124192fef8749a7fa2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplashScreen
-  waitTime: 3
-  audioSource: {fileID: 0}
+  waitTime: 4
+  audioSource: {fileID: 859830941}
 --- !u!4 &859830940
 Transform:
   m_ObjectHideFlags: 0
@@ -644,7 +644,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 2ab40e73e030861479516e3eb1e2d2bd, type: 3}
+  m_Resource: {fileID: 8300000, guid: cee6a6fa07dad414fba5dffd275255b1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
