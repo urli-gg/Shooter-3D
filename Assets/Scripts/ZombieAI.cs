@@ -13,33 +13,52 @@ public class ZombieAI : MonoBehaviour
     private float lastAttackTime;
 
     private NavMeshAgent agent;
+    private Animator animator;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+
         agent.speed = speed;
 
         if (target == null)
         {
-            target = GameObject.FindGameObjectWithTag("Player").transform;
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            if (player != null)
+            {
+                target = player.transform;
+            }
         }
     }
 
     void Update()
     {
-        if (target == null) return;
+        if (target == null)
+        {
+            return;
+        }
 
         float distance = Vector3.Distance(transform.position, target.position);
 
         if (distance > attackDistance)
         {
-            
             agent.SetDestination(target.position);
+
+            if (animator != null)
+            {
+                animator.SetBool("isWalking", true);
+            }
         }
         else
         {
-            
-            agent.SetDestination(transform.position); 
+            agent.SetDestination(transform.position);
+
+            if (animator != null)
+            {
+                animator.SetBool("isWalking", false);
+            }
 
             if (Time.time >= lastAttackTime + attackCooldown)
             {
